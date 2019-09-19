@@ -11,7 +11,6 @@ float gridSize = 20;
 float margin = 20;
 
 int mode; //For shape mode
-int[] colorValues = new int[9]; //For RGB color pickers
 int colorLayer; //number of the chosen layer
 ColorPicker layer1; //
 ColorPicker layer2; //Color pickers
@@ -47,9 +46,9 @@ void setup() {
 
   for (int i = 0; i<=9; i++) {
     starAndCircles[i] = loadImage("PNG_series/" + i + ".png");    //
-    squares[i] = loadImage("PNG_series/" + (i+10) + ".png");    //Image
-    circles[i] = loadImage("PNG_series/" + (i+20) + ".png");    //importing
-    curves[i] = loadImage("PNG_series/" + (i+30) + ".png");     //
+    squares[i] = loadImage("PNG_series/" + (i+10) + ".png");      //Image
+    circles[i] = loadImage("PNG_series/" + (i+20) + ".png");      //importing
+    curves[i] = loadImage("PNG_series/" + (i+30) + ".png");       //
   }
 }
 
